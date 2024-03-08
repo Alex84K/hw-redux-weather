@@ -1,5 +1,9 @@
-export interface RootState {
+/*export interface RootState {
     weather: object
+}*/
+
+export interface RootState {
+    city: string
 }
 
 export interface ReduxAction {
@@ -10,5 +14,10 @@ export interface ReduxAction {
 export interface ReduxWeather {
     type: string,
     payload: any
+}
+
+export interface ReduxCity {
+    type: string,
+    payload: string
 }
 
